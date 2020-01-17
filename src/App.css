@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.albums-container {
+  width: 99%;
+  display: flex;
+}
+
+.album-frame {
+  min-width: 30px;
+  background-color: lightgrey;
+}
