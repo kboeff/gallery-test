@@ -74,7 +74,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,7 +116,7 @@ body {
   color: pink;
 }
 
-navbar {
+.navbar {
   position: fixed;
   top: 0px;
   display: flex;

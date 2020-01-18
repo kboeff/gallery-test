@@ -8,7 +8,7 @@ export const addFavourite = (imageID) => ({
   payload: imageID,
 });
 
-export const removeFromCart = (imageID) => ({
+export const removeFavourite = (imageID) => ({
   type: REMOVE_FROM_FAVOURITES,
   payload: imageID,
 });
