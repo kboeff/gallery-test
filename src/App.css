@@ -37,12 +37,106 @@
   }
 }
 
-.albums-container {
-  width: 99%;
-  display: flex;
+body {
+  background-color:  #011d4c;
+  color:  #f9ebea;
 }
 
-.album-frame {
+.albums-container, .gallery-container {
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album {
   min-width: 30px;
-  background-color: lightgrey;
+  width: 60px;
+  height: 60px;
+  background-color: lightseagreen;
+  margin: 5px;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4px solid transparent;
+  border-radius: 5px;
+}
+
+.album:hover {
+  cursor: pointer;
+  color:  #FFC300;
+  border-bottom: 4px solid #FFC300;
+}
+
+.section-title {
+  margin-top: 100px;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-card {
+  min-height: 280px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(176, 224, 230, 0.05);
+  border: 1px solid rgba(122, 20, 232, 0.6);
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.image-card:hover {
+  background-color: rgba(76, 224, 230, 0.1);
+  border: 1px solid #fff;
+}
+
+.image-title {
+  flex-shrink: 0.1;  
+}
+
+.fav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fav-container:hover {
+  cursor: pointer;
+  color: pink;
+}
+
+navbar {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 70px;
+}
+
+.nav-link {
+  margin: 0px 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 1px solid white;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: pink;
+  border: 1px solid pink;
 }
