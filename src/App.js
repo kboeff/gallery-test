@@ -4,21 +4,21 @@ import axios from 'axios';
 
 import Home from './containers/Home';
 
-function App() {
-  const [data, setData] = useState([]);
+
+export default () => {
+  const [dataState, setData] = useState({
+    data: [],
+    isLoading: true
+  });
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios('https://jsonplaceholder.typicode.com/photos');
-      setData(result.data);
+      setData({ data: result.data, isLoading: false });
     };
 
     fetchData();
   }, []);
   
-  return (
-    <Home data={data} />
-  );
-}
-
-export default App;
+  return (<Home data={dataState.data} isLoading={dataState.isLoading}/>);
+};

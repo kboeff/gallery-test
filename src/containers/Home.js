@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Albums from '../components/Albums.js';
 import Gallery from '../components/Gallery.js';
 
-const Home = ({ data, favourites }) => {
+const Home = ({ data, isLoading, favourites }) => {
   const [view, setView] = useState({ path: 'albums', selection: -1 });
 
   const switchView = (newView) => {
@@ -20,6 +20,7 @@ const Home = ({ data, favourites }) => {
       return (
         <Albums 
           data={data}
+          isLoading={isLoading}
           handleAlbumClick={handleAlbumClick}
           switchView={switchView}
         />
