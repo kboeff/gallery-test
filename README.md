@@ -1,4 +1,7 @@
 # gallery-test
 
-Made with `create-react-app`, also using `redux`, `redux-persist`, `axios`.
-Could use routing, instead it currently conditionally renders one of these views: All Albums (default), Gallery with images from one Album, Gallery with All Favourite images.
+Made with `create-react-app`, also using `redux`, `redux-persist`, `axios`.<br>
+Could use routing, instead it currently conditionally renders one of these views:<br>
+- All Albums (default)<br>
+- Gallery with images from one Album<br>
+- Gallery with All Favourite images.
